@@ -2,11 +2,11 @@ function divideIntoPools(money, percentage) {
 
 	var percentageTotal = 0;
 
+	// Ensure that percentage total is not over or under 100%
 	for (var i = 0; i < percentage.length; i++) {
 		percentageTotal += percentage[i];
 	};
 
-	// Ensure that percentage total does not go over 100%
 	if (percentageTotal != 1) {
 		console.log('percentages must add up to be 100%');
 		return false;
