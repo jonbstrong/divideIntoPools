@@ -1,17 +1,18 @@
 function divideIntoPools(money, percentage) {
 
-//	var percentageTotal = 0;
+	var percentageTotal = 0;
 
-//	for (var i = 0; i < percentage.length; i++) {
-//		percentageTotal += percentage[i];
-//	};
+	for (var i = 0; i < percentage.length; i++) {
+		percentageTotal += percentage[i];
+	};
 
-	// Ensure that percentage total does not 
-//	if (percentageTotal != 1) {
-//		console.log('percentages must add up to be 100%');
-//		return false;
-//	}
+	// Ensure that percentage total does not go over 100%
+	if (percentageTotal != 1) {
+		console.log('percentages must add up to be 100%');
+		return false;
+	}
 
+	// Initialise pools array
 	var pools = [],
 		totalCount = 0;
 
